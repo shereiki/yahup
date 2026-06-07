@@ -1,0 +1,69 @@
+{
+  "schema": "goose.health-sync-dry-run.v1",
+  "platform": "health_kit",
+  "permission_grants": ["heartRate", "heartRateVariabilitySDNN"],
+  "partial_plan_policy": "allow_planned_rows_after_confirmation",
+  "backfill": {
+    "start": "2026-05-27T00:00:00Z",
+    "end": "2026-05-28T00:00:00Z"
+  },
+  "candidates": [
+    {
+      "record_id": "hr-2026-05-27-0000",
+      "metric_family": "heart_rate",
+      "semantic": "heart_rate",
+      "source_kind": "decoded_raw",
+      "start_time": "2026-05-27T00:00:00Z",
+      "end_time": "2026-05-27T00:00:05Z",
+      "value": 61.0,
+      "unit": "count/min",
+      "approved_by_user": true,
+      "provenance": {"evidence_ids": ["synthetic.goose.v5.get_hello_frame"]}
+    },
+    {
+      "record_id": "hrv-sdnn-2026-05-27",
+      "metric_family": "hrv",
+      "semantic": "hrv_sdnn",
+      "source_kind": "user_approved_algorithm",
+      "start_time": "2026-05-27T00:10:00Z",
+      "end_time": "2026-05-27T00:15:00Z",
+      "value": 42.0,
+      "unit": "ms",
+      "algorithm_id": "goose.hrv.v0",
+      "algorithm_version": "0.1.0",
+      "approved_by_user": true,
+      "provenance": {"run_id": "hrv-demo-run", "component": "sdnn"}
+    },
+    {
+      "record_id": "hrv-rmssd-2026-05-27",
+      "metric_family": "hrv",
+      "semantic": "hrv_rmssd",
+      "source_kind": "user_approved_algorithm",
+      "start_time": "2026-05-27T00:10:00Z",
+      "end_time": "2026-05-27T00:15:00Z",
+      "value": 38.0,
+      "unit": "ms",
+      "algorithm_id": "goose.hrv.v0",
+      "algorithm_version": "0.1.0",
+      "approved_by_user": true,
+      "provenance": {"run_id": "hrv-demo-run", "component": "rmssd"}
+    },
+    {
+      "record_id": "reference-hrv-rmssd-2026-05-27",
+      "metric_family": "hrv",
+      "semantic": "hrv_rmssd",
+      "source_kind": "user_approved_algorithm",
+      "start_time": "2026-05-27T00:20:00Z",
+      "end_time": "2026-05-27T00:25:00Z",
+      "value": 38.0,
+      "unit": "ms",
+      "algorithm_id": "reference.hrv.time_domain.v1",
+      "algorithm_version": "1.0.0",
+      "approved_by_user": true,
+      "provenance": {
+        "run_id": "reference-hrv-run",
+        "algorithm_status": "benchmark-only"
+      }
+    }
+  ]
+}

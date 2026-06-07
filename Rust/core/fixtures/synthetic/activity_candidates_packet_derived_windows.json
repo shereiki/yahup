@@ -1,0 +1,113 @@
+{
+  "schema": "goose.activity-candidate-classifier-input.v1",
+  "windows": [
+    {
+      "window_id": "synthetic.activity.packet_derived.hr_only.window",
+      "start_time": "2026-05-27T06:00:00Z",
+      "end_time": "2026-05-27T06:20:00Z",
+      "heart_rate": {
+        "heart_rate_bpm": 77.0,
+        "confidence_0_to_1": 0.94,
+        "provenance": {
+          "source": "packet_derived",
+          "evidence_id": "synthetic.activity.packet_derived.hr_only.heart_rate",
+          "capture_session_id": "synthetic.activity.packet_derived.session",
+          "frame_id": "synthetic.activity.packet_derived.hr_only.frame",
+          "note": "Derived from a historical packet HR marker",
+          "details": {
+            "fixture_id": "synthetic.goose.v5.historical_k18_packet",
+            "packet_type_name": "HISTORICAL_DATA",
+            "packet_k": 18,
+            "body_summary_kind": "normal_history",
+            "source_signal": "normal_history_hr_marker",
+            "trusted_packet_derived": true
+          }
+        }
+      },
+      "approved_by_user": false
+    },
+    {
+      "window_id": "synthetic.activity.packet_derived.motion_only.window",
+      "start_time": "2026-05-27T06:25:00Z",
+      "end_time": "2026-05-27T06:45:00Z",
+      "motion": {
+        "gravity_samples": [
+          {
+            "gravity_x_g": 0.0,
+            "gravity_y_g": 0.0,
+            "gravity_z_g": -1.0,
+            "confidence_0_to_1": 0.98,
+            "provenance": {
+              "source": "packet_derived_motion_sample",
+              "evidence_id": "synthetic.activity.packet_derived.motion_only.motion.sample.0",
+              "capture_session_id": "synthetic.activity.packet_derived.session",
+              "frame_id": "synthetic.activity.packet_derived.motion_only.frame",
+              "note": "Packet-derived gravity sample 0",
+              "details": {
+                "fixture_id": "synthetic.goose.v5.k10_motion_summary_short",
+                "sample_index": 0,
+                "body_summary_kind": "raw_motion_k10",
+                "trusted_packet_derived": true
+              }
+            }
+          },
+          {
+            "gravity_x_g": 0.01,
+            "gravity_y_g": -0.01,
+            "gravity_z_g": -0.9999,
+            "confidence_0_to_1": 0.97,
+            "provenance": {
+              "source": "packet_derived_motion_sample",
+              "evidence_id": "synthetic.activity.packet_derived.motion_only.motion.sample.1",
+              "capture_session_id": "synthetic.activity.packet_derived.session",
+              "frame_id": "synthetic.activity.packet_derived.motion_only.frame",
+              "note": "Packet-derived gravity sample 1",
+              "details": {
+                "fixture_id": "synthetic.goose.v5.k10_motion_summary_short",
+                "sample_index": 1,
+                "body_summary_kind": "raw_motion_k10",
+                "trusted_packet_derived": true
+              }
+            }
+          },
+          {
+            "gravity_x_g": -0.02,
+            "gravity_y_g": 0.02,
+            "gravity_z_g": -0.9995,
+            "confidence_0_to_1": 0.96,
+            "provenance": {
+              "source": "packet_derived_motion_sample",
+              "evidence_id": "synthetic.activity.packet_derived.motion_only.motion.sample.2",
+              "capture_session_id": "synthetic.activity.packet_derived.session",
+              "frame_id": "synthetic.activity.packet_derived.motion_only.frame",
+              "note": "Packet-derived gravity sample 2",
+              "details": {
+                "fixture_id": "synthetic.goose.v5.k10_motion_summary_short",
+                "sample_index": 2,
+                "body_summary_kind": "raw_motion_k10",
+                "trusted_packet_derived": true
+              }
+            }
+          }
+        ],
+        "confidence_0_to_1": 0.4,
+        "provenance": {
+          "source": "packet_derived",
+          "evidence_id": "synthetic.activity.packet_derived.motion_only.motion",
+          "capture_session_id": "synthetic.activity.packet_derived.session",
+          "frame_id": "synthetic.activity.packet_derived.motion_only.frame",
+          "note": "Derived from a raw motion packet summary",
+          "details": {
+            "fixture_id": "synthetic.goose.v5.k10_motion_summary_short",
+            "packet_type_name": "REALTIME_RAW_DATA",
+            "packet_k": 10,
+            "body_summary_kind": "raw_motion_k10",
+            "source_signal": "raw_motion_k10",
+            "trusted_packet_derived": true
+          }
+        }
+      },
+      "approved_by_user": false
+    }
+  ]
+}

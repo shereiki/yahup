@@ -1,0 +1,13 @@
+{
+  "schema": "goose.openwhoop-reference-fixture.v1",
+  "service_uuid_probes": [
+    {
+      "label": "gen4_trimmed_uppercase",
+      "service_uuid": " 61080001-8D6D-82B8-614A-1C8CB0F8DCC6 "
+    },
+    {
+      "label": "gen5_canonical",
+      "service_uuid": "fd4b0001-cce1-4033-93ce-002d5875f58a"
+    }
+  ]
+}

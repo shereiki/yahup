@@ -1,0 +1,865 @@
+{
+  "schema": "goose.fixture-index.v1",
+  "generated_by": "goose-fixture-index",
+  "fixture_root": "fixtures",
+  "pass": true,
+  "fixtures": [
+    {
+      "id": "owned.history_complete.k10_motion_payload",
+      "path": "owned/history_complete_k10_motion_payload.hex",
+      "kind": "user-owned_payload_capture",
+      "source": "android_btsnoop_full_snoop_history_complete_20260528T1748Z",
+      "captured_at": "2026-05-28T17:22:33.396992Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "owned-capture",
+      "app_version": "whoop-official-capture",
+      "schema": "goose.payload.hex.v1",
+      "consent": "user-owned-capture",
+      "sensitivity": "user-owned-capture",
+      "notes": "Owned Android btsnoop-derived full K10 raw-motion payload from captures/android/bugreport-full-snoop-history-complete-20260528T1748Z/hci-analysis/data-packets/K10.full.bin.",
+      "checksum_sha256": "bace00c7df4ce6f2b7e49257c25b2cc1a462fd498c871e7373d69eacc20c96cd",
+      "byte_len": 3904,
+      "expected": {
+        "command_or_event": 0,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 47,
+        "packet_type_name": "HISTORICAL_DATA",
+        "parsed_payload": {
+          "body_summary": {
+            "heart_rate": 135,
+            "kind": "raw_motion_k10",
+            "warnings": []
+          },
+          "domain": "raw_motion_stream_result",
+          "kind": "data_packet",
+          "packet_k": 10
+        },
+        "payload_crc_valid": true,
+        "sequence": 10
+      }
+    },
+    {
+      "id": "owned.history_complete.k21_motion_payload",
+      "path": "owned/history_complete_k21_motion_payload.hex",
+      "kind": "user-owned_payload_capture",
+      "source": "android_btsnoop_full_snoop_history_complete_20260528T1748Z",
+      "captured_at": "2026-05-28T17:22:33.607826Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "owned-capture",
+      "app_version": "whoop-official-capture",
+      "schema": "goose.payload.hex.v1",
+      "consent": "user-owned-capture",
+      "sensitivity": "user-owned-capture",
+      "notes": "Owned Android btsnoop-derived full K21 raw-motion payload from captures/android/bugreport-full-snoop-history-complete-20260528T1748Z/hci-analysis/data-packets/K21.full.bin.",
+      "checksum_sha256": "141fdeff063f9c3c8edfe1f9f37ecb0a40d0461eacbdf11eca7ffd26e4d34b91",
+      "byte_len": 2506,
+      "expected": {
+        "command_or_event": 0,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 47,
+        "packet_type_name": "HISTORICAL_DATA",
+        "parsed_payload": {
+          "body_summary": {
+            "field_x": 964,
+            "group_1_count": 100,
+            "group_2_count": 100,
+            "kind": "raw_motion_k21",
+            "warnings": []
+          },
+          "domain": "raw_motion_stream_result",
+          "kind": "data_packet",
+          "packet_k": 21
+        },
+        "payload_crc_valid": true,
+        "sequence": 21
+      }
+    },
+    {
+      "id": "owned.history_complete.k24_normal_history_payload",
+      "path": "owned/history_complete_k24_normal_history_payload.hex",
+      "kind": "user-owned_payload_capture",
+      "source": "android_btsnoop_full_snoop_history_complete_20260528T1748Z",
+      "captured_at": "2026-05-28T17:22:29.944091Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "owned-capture",
+      "app_version": "whoop-official-capture",
+      "schema": "goose.payload.hex.v1",
+      "consent": "user-owned-capture",
+      "sensitivity": "user-owned-capture",
+      "notes": "Owned Android btsnoop-derived K24 normal-history payload from captures/android/bugreport-full-snoop-history-complete-20260528T1748Z/hci-analysis/data-packets/K24.full.bin.",
+      "checksum_sha256": "c37ecd16f2924eaab9a806020f6569efacf6bfe062cd78455f5eced170a3cc65",
+      "byte_len": 342,
+      "expected": {
+        "command_or_event": 0,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 47,
+        "packet_type_name": "HISTORICAL_DATA",
+        "parsed_payload": {
+          "body_summary": {
+            "hr_present": true,
+            "kind": "normal_history",
+            "marker_offset": 17,
+            "marker_value": 51
+          },
+          "domain": "normal_history_with_hr_marker",
+          "hr_present_marker": 51,
+          "kind": "data_packet",
+          "packet_k": 24
+        },
+        "payload_crc_valid": true,
+        "sequence": 24
+      }
+    },
+    {
+      "id": "owned.history_complete.temperature_level_event_payload",
+      "path": "owned/history_complete_temperature_level_event_payload.hex",
+      "kind": "user-owned_payload_capture",
+      "source": "android_btsnoop_full_snoop_history_complete_20260528T1748Z",
+      "captured_at": "2026-05-28T17:28:54.429706Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "owned-capture",
+      "app_version": "whoop-official-capture",
+      "schema": "goose.payload.hex.v1",
+      "consent": "user-owned-capture",
+      "sensitivity": "user-owned-capture",
+      "notes": "Owned Android btsnoop-derived TEMPERATURE_LEVEL event payload from captures/android/bugreport-full-snoop-history-complete-20260528T1748Z/hci-analysis/contexts/event-temperature_level.jsonl line 13. Body units remain unresolved; this fixture only proves owned event capture/parsing.",
+      "checksum_sha256": "bd0d8efba0d9ae18bd886219473ccfc110ff38d48dbfbfaa214f52704dfa6411",
+      "byte_len": 361,
+      "expected": {
+        "command_or_event": 17,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 48,
+        "packet_type_name": "EVENT",
+        "parsed_payload": {
+          "data_offset": 12,
+          "event_id": 17,
+          "event_name": "TEMPERATURE_LEVEL",
+          "kind": "event"
+        },
+        "payload_crc_valid": true,
+        "sequence": 0
+      }
+    },
+    {
+      "id": "owned.live_identity.k10_motion_payload",
+      "path": "owned/live_identity_k10_motion_payload.hex",
+      "kind": "user-owned_payload_capture",
+      "source": "android_btsnoop_live_identity_check_20260528T2002Z",
+      "captured_at": "2026-05-28T18:29:29.877435Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "owned-capture",
+      "app_version": "whoop-official-capture",
+      "schema": "goose.payload.hex.v1",
+      "consent": "user-owned-capture",
+      "sensitivity": "user-owned-capture",
+      "notes": "Owned Android btsnoop-derived K10 raw-motion payload from captures/android/live-identity-check-20260528T2002Z/hci-analysis/data-packets/K10.full.bin.",
+      "checksum_sha256": "7a588aa867a57e1c5ae9ba19a9829762fe182ea09f15948ac82833b5f7b6b2b7",
+      "byte_len": 337,
+      "expected": {
+        "command_or_event": 0,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 47,
+        "packet_type_name": "HISTORICAL_DATA",
+        "parsed_payload": {
+          "body_summary": {
+            "heart_rate": 150,
+            "kind": "raw_motion_k10"
+          },
+          "domain": "raw_motion_stream_result",
+          "kind": "data_packet",
+          "packet_k": 10
+        },
+        "payload_crc_valid": true,
+        "sequence": 10
+      }
+    },
+    {
+      "id": "owned.live_identity.k21_motion_payload",
+      "path": "owned/live_identity_k21_motion_payload.hex",
+      "kind": "user-owned_payload_capture",
+      "source": "android_btsnoop_live_identity_check_20260528T2002Z",
+      "captured_at": "2026-05-28T18:29:30.503000Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "owned-capture",
+      "app_version": "whoop-official-capture",
+      "schema": "goose.payload.hex.v1",
+      "consent": "user-owned-capture",
+      "sensitivity": "user-owned-capture",
+      "notes": "Owned Android btsnoop-derived K21 raw-motion payload from captures/android/live-identity-check-20260528T2002Z/hci-analysis/data-packets/K21.full.bin.",
+      "checksum_sha256": "07fd78f5750c4c883c4615e200b94ccd469b5e7a9fe786006a337de392b836d0",
+      "byte_len": 337,
+      "expected": {
+        "command_or_event": 0,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 47,
+        "packet_type_name": "HISTORICAL_DATA",
+        "parsed_payload": {
+          "body_summary": {
+            "field_x": 994,
+            "group_1_count": 100,
+            "kind": "raw_motion_k21"
+          },
+          "domain": "raw_motion_stream_result",
+          "kind": "data_packet",
+          "packet_k": 21
+        },
+        "payload_crc_valid": true,
+        "sequence": 21
+      }
+    },
+    {
+      "id": "owned.live_identity.k24_normal_history_payload",
+      "path": "owned/live_identity_k24_normal_history_payload.hex",
+      "kind": "user-owned_payload_capture",
+      "source": "android_btsnoop_live_identity_check_20260528T2002Z",
+      "captured_at": "2026-05-28T18:29:31.133380Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "owned-capture",
+      "app_version": "whoop-official-capture",
+      "schema": "goose.payload.hex.v1",
+      "consent": "user-owned-capture",
+      "sensitivity": "user-owned-capture",
+      "notes": "Owned Android btsnoop-derived K24 normal-history payload from captures/android/live-identity-check-20260528T2002Z/hci-analysis/data-packets/K24.full.bin.",
+      "checksum_sha256": "704fc41534bde16355e4fae8f878ab2f7184d20bb379d72063b94d17ed5890ea",
+      "byte_len": 325,
+      "expected": {
+        "command_or_event": 0,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 47,
+        "packet_type_name": "HISTORICAL_DATA",
+        "parsed_payload": {
+          "body_summary": {
+            "hr_present": true,
+            "kind": "normal_history",
+            "marker_offset": 17,
+            "marker_value": 151
+          },
+          "domain": "normal_history_with_hr_marker",
+          "hr_present_marker": 151,
+          "kind": "data_packet",
+          "packet_k": 24
+        },
+        "payload_crc_valid": true,
+        "sequence": 24
+      }
+    },
+    {
+      "id": "synthetic.goose.debug_ws.contract.valid",
+      "path": "synthetic/debug_ws_contract_valid.json",
+      "kind": "synthetic",
+      "source": "Hand-derived debug bridge stream contract fixture for local WebSocket validation.",
+      "captured_at": "2026-05-28T00:00:00Z",
+      "device_model": "not_applicable",
+      "device_firmware": "not_applicable",
+      "app_version": "not_applicable",
+      "schema": "goose.debug-ws-contract.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "Validates loopback token-gated debug stream events with command.started and command.result correlation.",
+      "checksum_sha256": "8ab529680a695210288bcefcf3947e017580d5e84b6f47d55ca817349f5ebeb4",
+      "byte_len": 3112,
+      "expected": {
+        "command_count": 2,
+        "event_count": 6,
+        "pass": true
+      }
+    },
+    {
+      "id": "synthetic.goose.v5.get_hello_frame",
+      "path": "synthetic/goose_v5_get_hello_frame.hex",
+      "kind": "synthetic",
+      "source": "Hand-derived parity fixture from the existing Python dry-run command builder.",
+      "captured_at": "2026-05-27T00:00:00Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "synthetic",
+      "app_version": "not_applicable",
+      "schema": "goose.frame.hex.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "GET_HELLO command frame with sequence 1 and payload 23019101.",
+      "checksum_sha256": "484c5e5d97e4791f19cb343f12cedef3280121917ae7aa24ad1b88db4de154c5",
+      "byte_len": 33,
+      "expected": {
+        "command_or_event": 145,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 35,
+        "payload_crc_valid": true,
+        "payload_hex": "23019101",
+        "sequence": 1
+      }
+    },
+    {
+      "id": "synthetic.goose.v5.historical_k18_packet",
+      "path": "synthetic/goose_v5_historical_k18_packet.hex",
+      "kind": "synthetic",
+      "source": "Hand-derived Goose v5 historical data frame using APK so0.b stable header offsets.",
+      "captured_at": "2026-05-27T00:20:00Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "synthetic",
+      "app_version": "not_applicable",
+      "schema": "goose.frame.hex.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "HISTORICAL_DATA K18 frame with stable header fields and HR-present marker at payload offset 14.",
+      "checksum_sha256": "4427659e9bcca2390bf2922f738c687d8bf618a5daaefed9a33d4c1ea9fb7b8f",
+      "byte_len": 65,
+      "expected": {
+        "command_or_event": 1,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 47,
+        "packet_type_name": "HISTORICAL_DATA",
+        "parsed_payload": {
+          "body_hex": "aa4dbbccddeeff",
+          "body_offset": 13,
+          "body_summary": {
+            "hr_present": true,
+            "kind": "normal_history",
+            "marker_offset": 14,
+            "marker_value": 77
+          },
+          "counter_or_page": 16909060,
+          "domain": "normal_history_with_hr_marker",
+          "hr_marker_offset": 14,
+          "hr_present_marker": 77,
+          "kind": "data_packet",
+          "packet_k": 18,
+          "status_or_stream": 1,
+          "timestamp_seconds": 287454020,
+          "timestamp_subseconds": 21862
+        },
+        "payload_crc_valid": true,
+        "payload_hex": "2f120104030201443322116655aa4dbbccddeeff",
+        "sequence": 18
+      }
+    },
+    {
+      "id": "synthetic.goose.v5.k10_motion_summary_short",
+      "path": "synthetic/goose_v5_k10_motion_summary_short.hex",
+      "kind": "synthetic",
+      "source": "Hand-derived shortened Goose v5 K10 raw-motion frame using APK uo0.a offsets.",
+      "captured_at": "2026-05-27T00:31:00Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "synthetic",
+      "app_version": "not_applicable",
+      "schema": "goose.frame.hex.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "Short K10 fixture validates heart-rate byte, signed accelerometer preview stats, truncation warnings, and raw body preservation without pretending motion units are known.",
+      "checksum_sha256": "c09c00d5266c6ca75ea36dbc36adc42149a722805548821e5402eb9e074f0c1c",
+      "byte_len": 219,
+      "expected": {
+        "command_or_event": 1,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 43,
+        "packet_type_name": "REALTIME_RAW_DATA",
+        "parsed_payload": {
+          "body_offset": 13,
+          "body_summary": {
+            "axes": [
+              {
+                "expected_count": 100,
+                "max": 3,
+                "min": -2,
+                "name": "accelerometer_x",
+                "offset": 85,
+                "parsed_count": 5,
+                "preview": [
+                  1,
+                  -2,
+                  3,
+                  0,
+                  0
+                ],
+                "sum": 2
+              },
+              {
+                "expected_count": 100,
+                "max": null,
+                "min": null,
+                "name": "accelerometer_y",
+                "offset": 285,
+                "parsed_count": 0,
+                "preview": [],
+                "sum": 0
+              },
+              {
+                "expected_count": 100,
+                "max": null,
+                "min": null,
+                "name": "accelerometer_z",
+                "offset": 485,
+                "parsed_count": 0,
+                "preview": [],
+                "sum": 0
+              },
+              {
+                "expected_count": 100,
+                "max": null,
+                "min": null,
+                "name": "gyroscope_x",
+                "offset": 688,
+                "parsed_count": 0,
+                "preview": [],
+                "sum": 0
+              },
+              {
+                "expected_count": 100,
+                "max": null,
+                "min": null,
+                "name": "gyroscope_y",
+                "offset": 888,
+                "parsed_count": 0,
+                "preview": [],
+                "sum": 0
+              },
+              {
+                "expected_count": 100,
+                "max": null,
+                "min": null,
+                "name": "gyroscope_z",
+                "offset": 1088,
+                "parsed_count": 0,
+                "preview": [],
+                "sum": 0
+              }
+            ],
+            "heart_rate": 72,
+            "kind": "raw_motion_k10",
+            "warnings": [
+              "accelerometer_x_truncated",
+              "accelerometer_y_truncated",
+              "accelerometer_z_truncated",
+              "gyroscope_x_truncated",
+              "gyroscope_y_truncated",
+              "gyroscope_z_truncated"
+            ]
+          },
+          "counter_or_page": 0,
+          "domain": "raw_motion_stream_result",
+          "kind": "data_packet",
+          "packet_k": 10,
+          "status_or_stream": 1,
+          "timestamp_seconds": 0,
+          "timestamp_subseconds": 0
+        },
+        "payload_crc_valid": true,
+        "sequence": 10
+      }
+    },
+    {
+      "id": "synthetic.goose.v5.k21_motion_summary_short",
+      "path": "synthetic/goose_v5_k21_motion_summary_short.hex",
+      "kind": "synthetic",
+      "source": "Hand-derived shortened Goose v5 K21 grouped-motion frame using APK uo0.e offsets.",
+      "captured_at": "2026-05-27T00:32:00Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "synthetic",
+      "app_version": "not_applicable",
+      "schema": "goose.frame.hex.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "Short K21 fixture validates group counts, first signed axis stats, truncation warnings, and raw body preservation without pretending motion units are known.",
+      "checksum_sha256": "220fb261b711f1ca8f3527bf4c060d3cc8ec5c46ad89cc2350658b7457a35371",
+      "byte_len": 284,
+      "expected": {
+        "command_or_event": 1,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 40,
+        "packet_type_name": "REALTIME_DATA",
+        "parsed_payload": {
+          "body_offset": 13,
+          "body_summary": {
+            "axes": [
+              {
+                "expected_count": 3,
+                "max": 2,
+                "min": -3,
+                "name": "group_1_axis_0",
+                "offset": 20,
+                "parsed_count": 3,
+                "preview": [
+                  -1,
+                  2,
+                  -3
+                ],
+                "sum": -2
+              },
+              {
+                "expected_count": 3,
+                "max": null,
+                "min": null,
+                "name": "group_1_axis_1",
+                "offset": 220,
+                "parsed_count": 0,
+                "preview": [],
+                "sum": 0
+              },
+              {
+                "expected_count": 3,
+                "max": null,
+                "min": null,
+                "name": "group_1_axis_2",
+                "offset": 420,
+                "parsed_count": 0,
+                "preview": [],
+                "sum": 0
+              },
+              {
+                "expected_count": 0,
+                "max": null,
+                "min": null,
+                "name": "group_2_axis_0",
+                "offset": 632,
+                "parsed_count": 0,
+                "preview": [],
+                "sum": 0
+              },
+              {
+                "expected_count": 0,
+                "max": null,
+                "min": null,
+                "name": "group_2_axis_1",
+                "offset": 832,
+                "parsed_count": 0,
+                "preview": [],
+                "sum": 0
+              },
+              {
+                "expected_count": 0,
+                "max": null,
+                "min": null,
+                "name": "group_2_axis_2",
+                "offset": 1032,
+                "parsed_count": 0,
+                "preview": [],
+                "sum": 0
+              }
+            ],
+            "field_x": 321,
+            "group_1_count": 3,
+            "group_2_count": null,
+            "kind": "raw_motion_k21",
+            "warnings": [
+              "group_1_axis_1_truncated",
+              "group_1_axis_2_truncated"
+            ]
+          },
+          "counter_or_page": 0,
+          "domain": "raw_motion_stream_result",
+          "kind": "data_packet",
+          "packet_k": 21,
+          "status_or_stream": 1,
+          "timestamp_seconds": 0,
+          "timestamp_subseconds": 0
+        },
+        "payload_crc_valid": true,
+        "sequence": 21
+      }
+    },
+    {
+      "id": "synthetic.goose.v5.r17_optical_summary",
+      "path": "synthetic/goose_v5_r17_optical_summary.hex",
+      "kind": "synthetic",
+      "source": "Hand-derived Goose v5 R17 data-packet frame using APK qh0.i field offsets.",
+      "captured_at": "2026-05-27T00:30:00Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "synthetic",
+      "app_version": "not_applicable",
+      "schema": "goose.frame.hex.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "R17 optical/filter packet fixture validates offset-level flags, channels/gain bytes, signed sample stats, and raw body preservation. Units remain unresolved until owned capture correlation.",
+      "checksum_sha256": "f01388e38905ab06cce74ad855221b8c71dcebb1a8b057e30b570849233a856a",
+      "byte_len": 90,
+      "expected": {
+        "command_or_event": 1,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 47,
+        "packet_type_name": "HISTORICAL_DATA",
+        "parsed_payload": {
+          "body_offset": 13,
+          "body_summary": {
+            "channels_or_gain": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "flag_bit_11": true,
+            "flag_bit_9": true,
+            "flags": 2560,
+            "kind": "r17_optical_or_labrador_filtered",
+            "sample_count": 3,
+            "samples": {
+              "expected_count": 3,
+              "max": 1000,
+              "min": -1000,
+              "name": "r17_samples",
+              "offset": 26,
+              "parsed_count": 3,
+              "preview": [
+                1000,
+                -1000,
+                200
+              ],
+              "sum": 200
+            },
+            "warnings": []
+          },
+          "counter_or_page": 0,
+          "domain": "r17_optical_or_labrador_filtered",
+          "kind": "data_packet",
+          "packet_k": 17,
+          "status_or_stream": 1,
+          "timestamp_seconds": 0,
+          "timestamp_subseconds": 0
+        },
+        "payload_crc_valid": true,
+        "payload_hex": "2f110100000000000000000000000a0102030405060000000300e80318fcc800",
+        "sequence": 17
+      }
+    },
+    {
+      "id": "synthetic.goose.v5.temperature_event",
+      "path": "synthetic/goose_v5_temperature_event.hex",
+      "kind": "synthetic",
+      "source": "Hand-derived Goose v5 event frame using APK event header offsets.",
+      "captured_at": "2026-05-27T00:10:00Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "synthetic",
+      "app_version": "not_applicable",
+      "schema": "goose.frame.hex.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "EVENT packet with event id 17 TEMPERATURE_LEVEL and raw body bytes preserved for future capture correlation.",
+      "checksum_sha256": "41c291d6c0833be6252094c502ec9956a028aa9cb713182e5653894bc2ef5693",
+      "byte_len": 57,
+      "expected": {
+        "command_or_event": 17,
+        "device_type": "GOOSE",
+        "header_crc_valid": true,
+        "packet_type": 48,
+        "packet_type_name": "EVENT",
+        "parsed_payload": {
+          "data_hex": "deadbeef",
+          "data_offset": 12,
+          "event_id": 17,
+          "event_name": "TEMPERATURE_LEVEL",
+          "kind": "event",
+          "timestamp_seconds": 16909060,
+          "timestamp_subseconds": 1286
+        },
+        "payload_crc_valid": true,
+        "payload_hex": "300211000403020106050000deadbeef",
+        "sequence": 2
+      }
+    },
+    {
+      "id": "synthetic.goose.health_sync.healthkit",
+      "path": "synthetic/health_sync_dry_run_healthkit.json",
+      "kind": "synthetic",
+      "source": "Hand-derived HealthKit dry-run fixture for mapping and HRV guard tests.",
+      "captured_at": "2026-05-27T00:00:00Z",
+      "device_model": "not_applicable",
+      "device_firmware": "not_applicable",
+      "app_version": "not_applicable",
+      "schema": "goose.health-sync-dry-run.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "Plans heart rate and SDNN writes while blocking RMSSD to HealthKit SDNN and benchmark-only reference algorithm output sync.",
+      "checksum_sha256": "e3d7282585b6d8b65d9a21307cb16aef5142de52846cee995e76b4eebe84966d",
+      "byte_len": 2126,
+      "expected": {
+        "blocked_count": 2,
+        "blocked_reasons": [
+          "healthkit_rmssd_must_not_be_written_as_sdnn",
+          "benchmark_only_algorithm_not_syncable"
+        ],
+        "planned_write_count": 2,
+        "platform": "health_kit"
+      }
+    },
+    {
+      "id": "synthetic.goose.hrv.v0.hand_derived",
+      "path": "synthetic/hrv_goose_v0_hand_derived.json",
+      "kind": "synthetic",
+      "source": "Hand-derived HRV fixture for Goose HRV v0 calculation tests.",
+      "captured_at": "2026-05-27T00:00:00Z",
+      "device_model": "not_applicable",
+      "device_firmware": "not_applicable",
+      "app_version": "not_applicable",
+      "schema": "goose.hrv-input.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "RR intervals produce mean NN 800 ms, RMSSD sqrt(200), sample SDNN sqrt(200/3), pNN50 0.",
+      "checksum_sha256": "94060a2a2b2782aaf706e32835cdf5527ea41158a030b251d09c1cc1f04b2681",
+      "byte_len": 179,
+      "expected": {
+        "algorithm_id": "goose.hrv.v0",
+        "mean_nn_ms": 800.0,
+        "pnn50_fraction": 0.0,
+        "rmssd_ms": 14.142135623730953,
+        "sdnn_ms": 8.16496580927726,
+        "version": "0.1.0"
+      }
+    },
+    {
+      "id": "synthetic.goose.recovery.calibration.linear",
+      "path": "synthetic/recovery_calibration_linear.json",
+      "kind": "synthetic",
+      "source": "Hand-derived calibration fixture for date-split linear score calibration.",
+      "captured_at": "2026-05-01T00:00:00Z",
+      "device_model": "not_applicable",
+      "device_firmware": "not_applicable",
+      "app_version": "not_applicable",
+      "schema": "goose.calibration-dataset.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "Train rows before 2026-05-04 and holdout rows on/after 2026-05-04 follow label = 1.2 * prediction - 5.",
+      "checksum_sha256": "b79abfc43ec21c68f50c63cf4500155af53e5704964220c26a4351e2abea8b20",
+      "byte_len": 2269,
+      "expected": {
+        "algorithm_id": "goose.recovery.v0",
+        "holdout_mae_after": 0.0,
+        "intercept": -5.0,
+        "slope": 1.2,
+        "split_at": "2026-05-04T00:00:00Z",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "id": "synthetic.goose.recovery.v0.hand_derived",
+      "path": "synthetic/recovery_goose_v0_hand_derived.json",
+      "kind": "synthetic",
+      "source": "Hand-derived recovery score fixture for Goose Recovery v0 calculation tests.",
+      "captured_at": "2026-05-28T00:00:00Z",
+      "device_model": "not_applicable",
+      "device_firmware": "not_applicable",
+      "app_version": "not_applicable",
+      "schema": "goose.recovery-input.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "Neutral HRV/RHR, perfect respiratory/temp, sleep 80, and prior strain readiness 70 produce weighted recovery 77.5.",
+      "checksum_sha256": "114edeaaf7110422eefb904def79bca2db81d6f6852832579a9614261b288443",
+      "byte_len": 406,
+      "expected": {
+        "algorithm_id": "goose.recovery.v0",
+        "component_count": 6,
+        "score_0_to_100": 77.5,
+        "version": "0.1.0"
+      }
+    },
+    {
+      "id": "synthetic.sanitized.corebluetooth.frame_batch",
+      "path": "synthetic/sanitized_corebluetooth_frame_batch.json",
+      "kind": "sanitized_capture",
+      "source": "synthetic_sanitized_capture",
+      "captured_at": "2026-05-27T00:00:00Z",
+      "device_model": "WHOOP 5.0 Goose",
+      "device_firmware": "synthetic",
+      "app_version": "goose-fixture",
+      "schema": "goose.captured-frame-batch.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "synthetic-sanitized",
+      "notes": "Synthetic sanitized CoreBluetooth-style batch proving multi-frame import without per-frame sidecars.",
+      "checksum_sha256": "02ca9edd8c2bb89e6f7b9e04a70cddebe7b57e63ef22bf8ade95bb9a2e970463",
+      "byte_len": 1138,
+      "expected": {
+        "frame_count": 2,
+        "packet_type_names": [
+          "COMMAND",
+          "REALTIME_RAW_DATA"
+        ],
+        "parsed_payload_kinds": [
+          "command",
+          "data_packet"
+        ]
+      }
+    },
+    {
+      "id": "synthetic.goose.sleep.v0.hand_derived",
+      "path": "synthetic/sleep_goose_v0_hand_derived.json",
+      "kind": "synthetic",
+      "source": "Hand-derived sleep score fixture for Goose Sleep v0 calculation tests.",
+      "captured_at": "2026-05-27T22:30:00Z",
+      "device_model": "not_applicable",
+      "device_firmware": "not_applicable",
+      "app_version": "not_applicable",
+      "schema": "goose.sleep-input.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "Duration and efficiency are 87.5, consistency is 75, disturbance score is 80, weighted output is 84.875.",
+      "checksum_sha256": "f071a723e468cf50e940988f626cacd5d0f0f804ecb03846f299910d5fbed006",
+      "byte_len": 282,
+      "expected": {
+        "algorithm_id": "goose.sleep.v0",
+        "efficiency_fraction": 0.875,
+        "score_0_to_100": 84.875,
+        "sleep_debt_minutes": 60.0,
+        "version": "0.1.0"
+      }
+    },
+    {
+      "id": "synthetic.goose.strain.v0.hand_derived",
+      "path": "synthetic/strain_goose_v0_hand_derived.json",
+      "kind": "synthetic",
+      "source": "Hand-derived strain score fixture for Goose Strain v0 calculation tests.",
+      "captured_at": "2026-05-28T12:00:00Z",
+      "device_model": "not_applicable",
+      "device_firmware": "not_applicable",
+      "app_version": "not_applicable",
+      "schema": "goose.strain-input.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "Zone load is 140, HR reserve fraction is 0.5, weighted output is 8.05 on a 0-21 scale.",
+      "checksum_sha256": "f534e9a00b6f5b52f9a2dad007f11fdff2550a87319091e94db5389a4647c05b",
+      "byte_len": 276,
+      "expected": {
+        "algorithm_id": "goose.strain.v0",
+        "average_hr_reserve_fraction": 0.5,
+        "score_0_to_21": 8.05,
+        "version": "0.1.0",
+        "zone_load": 140.0
+      }
+    },
+    {
+      "id": "synthetic.goose.stress.v0.hand_derived",
+      "path": "synthetic/stress_goose_v0_hand_derived.json",
+      "kind": "synthetic",
+      "source": "Hand-derived stress score fixture for Goose Stress v0 calculation tests.",
+      "captured_at": "2026-05-28T12:00:00Z",
+      "device_model": "not_applicable",
+      "device_firmware": "not_applicable",
+      "app_version": "not_applicable",
+      "schema": "goose.stress-input.v1",
+      "consent": "synthetic-no-user-data",
+      "sensitivity": "public-test-fixture",
+      "notes": "HR elevation and HRV suppression both score 50 with no motion discount, producing stress 50.",
+      "checksum_sha256": "ebc80ee79eb7f081eb59812453b773e907043c84597ac452d72f24a3dbb865b2",
+      "byte_len": 264,
+      "expected": {
+        "algorithm_id": "goose.stress.v0",
+        "heart_rate_elevation_score": 50.0,
+        "hrv_suppression_score": 50.0,
+        "score_0_to_100": 50.0,
+        "version": "0.1.0"
+      }
+    }
+  ],
+  "issues": [],
+  "next_actions": []
+}

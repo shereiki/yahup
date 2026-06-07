@@ -1,0 +1,25 @@
+{
+  "id": "synthetic.goose.health_sync.healthkit",
+  "path": "synthetic/health_sync_dry_run_healthkit.json",
+  "kind": "synthetic",
+  "source": "Hand-derived HealthKit dry-run fixture for mapping and HRV guard tests.",
+  "captured_at": "2026-05-27T00:00:00Z",
+  "device_model": "not_applicable",
+  "device_firmware": "not_applicable",
+  "app_version": "not_applicable",
+  "schema": "goose.health-sync-dry-run.v1",
+  "consent": "synthetic-no-user-data",
+  "sensitivity": "public-test-fixture",
+  "notes": "Plans heart rate and SDNN writes while blocking RMSSD to HealthKit SDNN and benchmark-only reference algorithm output sync.",
+  "expected": {
+    "platform": "health_kit",
+    "partial_plan_policy": "allow_planned_rows_after_confirmation",
+    "partial_plan_confirmation_required": true,
+    "planned_write_count": 2,
+    "blocked_count": 2,
+    "blocked_reasons": [
+      "healthkit_rmssd_must_not_be_written_as_sdnn",
+      "benchmark_only_algorithm_not_syncable"
+    ]
+  }
+}

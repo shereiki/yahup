@@ -1,0 +1,10 @@
+{
+  "start_time": "2026-05-28T12:00:00Z",
+  "end_time": "2026-05-28T12:05:00Z",
+  "heart_rate_bpm": 90.0,
+  "resting_hr_bpm": 60.0,
+  "hrv_rmssd_ms": 25.0,
+  "hrv_baseline_rmssd_ms": 50.0,
+  "motion_intensity_0_to_1": 0.0,
+  "input_ids": ["hand-derived.stress"]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "owned.live_identity.k24_normal_history_payload",
+  "path": "owned/live_identity_k24_normal_history_payload.hex",
+  "kind": "user-owned_payload_capture",
+  "source": "android_btsnoop_live_identity_check_20260528T2002Z",
+  "captured_at": "2026-05-28T18:29:31.133380Z",
+  "device_model": "WHOOP 5.0 Goose",
+  "device_firmware": "owned-capture",
+  "app_version": "whoop-official-capture",
+  "schema": "goose.payload.hex.v1",
+  "consent": "user-owned-capture",
+  "sensitivity": "user-owned-capture",
+  "notes": "Owned Android btsnoop-derived K24 normal-history payload from captures/android/live-identity-check-20260528T2002Z/hci-analysis/data-packets/K24.full.bin.",
+  "expected": {
+    "device_type": "GOOSE",
+    "packet_type": 47,
+    "sequence": 24,
+    "command_or_event": 0,
+    "header_crc_valid": true,
+    "payload_crc_valid": true,
+    "packet_type_name": "HISTORICAL_DATA",
+    "parsed_payload": {
+      "kind": "data_packet",
+      "packet_k": 24,
+      "domain": "normal_history_with_hr_marker",
+      "hr_present_marker": 151,
+      "body_summary": {
+        "kind": "normal_history",
+        "hr_present": true,
+        "marker_offset": 17,
+        "marker_value": 151
+      }
+    }
+  }
+}

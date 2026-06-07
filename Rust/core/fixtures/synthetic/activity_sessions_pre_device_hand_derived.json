@@ -1,0 +1,864 @@
+{
+  "schema": "goose.activity-session-fixtures.v1",
+  "activity_sessions": [
+    {
+      "session_id": "synthetic.activity.unknown.session",
+      "source": "synthetic.pre_device",
+      "start_time_unix_ms": 1770000000000,
+      "end_time_unix_ms": 1770001200000,
+      "duration_ms": 1200000,
+      "activity_type": "unknown",
+      "external_activity_type_code": null,
+      "external_activity_type_name": null,
+      "custom_label": "Unknown activity",
+      "confidence": 0.29,
+      "detection_method": "heuristic_motion",
+      "sync_status": "candidate",
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "unknown",
+        "row_kind": "session",
+        "status": "pre_device"
+      }
+    },
+    {
+      "session_id": "synthetic.activity.run_like.session",
+      "source": "synthetic.pre_device",
+      "start_time_unix_ms": 1770003600000,
+      "end_time_unix_ms": 1770007200000,
+      "duration_ms": 3600000,
+      "activity_type": "running",
+      "external_activity_type_code": "run",
+      "external_activity_type_name": "Run",
+      "custom_label": "Tempo run",
+      "confidence": 0.96,
+      "detection_method": "heuristic_motion",
+      "sync_status": "user_confirmed",
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "run_like",
+        "row_kind": "session",
+        "status": "pre_device"
+      }
+    },
+    {
+      "session_id": "synthetic.activity.ride_like.session",
+      "source": "synthetic.pre_device",
+      "start_time_unix_ms": 1770007200000,
+      "end_time_unix_ms": 1770010800000,
+      "duration_ms": 3600000,
+      "activity_type": "cycling",
+      "external_activity_type_code": "ride",
+      "external_activity_type_name": "Ride",
+      "custom_label": "Endurance ride",
+      "confidence": 0.93,
+      "detection_method": "heuristic_motion",
+      "sync_status": "verified",
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "ride_like",
+        "row_kind": "session",
+        "status": "pre_device"
+      }
+    },
+    {
+      "session_id": "synthetic.activity.strength_like.session",
+      "source": "synthetic.pre_device",
+      "start_time_unix_ms": 1770010800000,
+      "end_time_unix_ms": 1770012300000,
+      "duration_ms": 1500000,
+      "activity_type": "strength",
+      "external_activity_type_code": "strength",
+      "external_activity_type_name": "Strength training",
+      "custom_label": "Dumbbell circuit",
+      "confidence": 0.91,
+      "detection_method": "manual_annotation",
+      "sync_status": "candidate",
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "strength_like",
+        "row_kind": "session",
+        "status": "pre_device"
+      }
+    },
+    {
+      "session_id": "synthetic.activity.hr_only_no_distance.session",
+      "source": "synthetic.pre_device",
+      "start_time_unix_ms": 1770014400000,
+      "end_time_unix_ms": 1770016200000,
+      "duration_ms": 1800000,
+      "activity_type": "other",
+      "external_activity_type_code": null,
+      "external_activity_type_name": null,
+      "custom_label": "Heart-rate only session",
+      "confidence": 0.66,
+      "detection_method": "heuristic_hr_motion",
+      "sync_status": "user_confirmed",
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "hr_only_no_distance",
+        "row_kind": "session",
+        "status": "pre_device"
+      }
+    },
+    {
+      "session_id": "synthetic.activity.no_hr.session",
+      "source": "synthetic.pre_device",
+      "start_time_unix_ms": 1770018000000,
+      "end_time_unix_ms": 1770020100000,
+      "duration_ms": 2100000,
+      "activity_type": "walking",
+      "external_activity_type_code": "walk",
+      "external_activity_type_name": "Walk",
+      "custom_label": "Walk commute",
+      "confidence": 0.88,
+      "detection_method": "heuristic_motion",
+      "sync_status": "candidate",
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "no_hr",
+        "row_kind": "session",
+        "status": "pre_device"
+      }
+    },
+    {
+      "session_id": "synthetic.activity.multi_interval.session",
+      "source": "synthetic.pre_device",
+      "start_time_unix_ms": 1770021600000,
+      "end_time_unix_ms": 1770026100000,
+      "duration_ms": 4500000,
+      "activity_type": "hiit",
+      "external_activity_type_code": "hiit",
+      "external_activity_type_name": "HIIT",
+      "custom_label": "Interval circuit",
+      "confidence": 0.94,
+      "detection_method": "manual_split",
+      "sync_status": "verified",
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "multi_interval",
+        "row_kind": "session",
+        "status": "pre_device"
+      }
+    }
+  ],
+  "activity_metrics": [
+    {
+      "metric_id": "synthetic.activity.run_like.metric.heart_rate",
+      "activity_session_id": "synthetic.activity.run_like.session",
+      "metric_name": "heart_rate",
+      "value": 158.0,
+      "unit": "bpm",
+      "start_time_unix_ms": 1770003600000,
+      "end_time_unix_ms": 1770007200000,
+      "quality_flags_json": ["trusted_packet_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "run_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.run_like.metric.distance",
+      "activity_session_id": "synthetic.activity.run_like.session",
+      "metric_name": "distance",
+      "value": 10.2,
+      "unit": "km",
+      "start_time_unix_ms": 1770003600000,
+      "end_time_unix_ms": 1770007200000,
+      "quality_flags_json": ["trusted_packet_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "run_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.run_like.metric.speed",
+      "activity_session_id": "synthetic.activity.run_like.session",
+      "metric_name": "speed",
+      "value": 3.2,
+      "unit": "m/s",
+      "start_time_unix_ms": 1770003600000,
+      "end_time_unix_ms": 1770007200000,
+      "quality_flags_json": ["derived_from_distance_time"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "run_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.run_like.metric.cadence",
+      "activity_session_id": "synthetic.activity.run_like.session",
+      "metric_name": "cadence",
+      "value": 172.0,
+      "unit": "count",
+      "start_time_unix_ms": 1770003600000,
+      "end_time_unix_ms": 1770007200000,
+      "quality_flags_json": ["motion_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "run_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.run_like.metric.calories",
+      "activity_session_id": "synthetic.activity.run_like.session",
+      "metric_name": "calories",
+      "value": 680.0,
+      "unit": "kcal",
+      "start_time_unix_ms": 1770003600000,
+      "end_time_unix_ms": 1770007200000,
+      "quality_flags_json": [],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "run_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.ride_like.metric.heart_rate",
+      "activity_session_id": "synthetic.activity.ride_like.session",
+      "metric_name": "heart_rate",
+      "value": 146.0,
+      "unit": "bpm",
+      "start_time_unix_ms": 1770007200000,
+      "end_time_unix_ms": 1770010800000,
+      "quality_flags_json": ["trusted_packet_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "ride_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.ride_like.metric.distance",
+      "activity_session_id": "synthetic.activity.ride_like.session",
+      "metric_name": "distance",
+      "value": 31.8,
+      "unit": "km",
+      "start_time_unix_ms": 1770007200000,
+      "end_time_unix_ms": 1770010800000,
+      "quality_flags_json": ["trusted_packet_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "ride_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.ride_like.metric.power",
+      "activity_session_id": "synthetic.activity.ride_like.session",
+      "metric_name": "power",
+      "value": 192.0,
+      "unit": "w",
+      "start_time_unix_ms": 1770007200000,
+      "end_time_unix_ms": 1770010800000,
+      "quality_flags_json": ["power_sensor_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "ride_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.ride_like.metric.cadence",
+      "activity_session_id": "synthetic.activity.ride_like.session",
+      "metric_name": "cadence",
+      "value": 89.0,
+      "unit": "count",
+      "start_time_unix_ms": 1770007200000,
+      "end_time_unix_ms": 1770010800000,
+      "quality_flags_json": ["motion_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "ride_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.strength_like.metric.heart_rate",
+      "activity_session_id": "synthetic.activity.strength_like.session",
+      "metric_name": "heart_rate",
+      "value": 128.0,
+      "unit": "bpm",
+      "start_time_unix_ms": 1770010800000,
+      "end_time_unix_ms": 1770012300000,
+      "quality_flags_json": ["manual_annotation"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "strength_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.strength_like.metric.load",
+      "activity_session_id": "synthetic.activity.strength_like.session",
+      "metric_name": "load",
+      "value": 86.0,
+      "unit": "load",
+      "start_time_unix_ms": 1770010800000,
+      "end_time_unix_ms": 1770012300000,
+      "quality_flags_json": ["manual_annotation"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "strength_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.strength_like.metric.repetitions",
+      "activity_session_id": "synthetic.activity.strength_like.session",
+      "metric_name": "repetitions",
+      "value": 156.0,
+      "unit": "count",
+      "start_time_unix_ms": 1770010800000,
+      "end_time_unix_ms": 1770012300000,
+      "quality_flags_json": ["manual_annotation"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "strength_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.strength_like.metric.calories",
+      "activity_session_id": "synthetic.activity.strength_like.session",
+      "metric_name": "calories",
+      "value": 320.0,
+      "unit": "kcal",
+      "start_time_unix_ms": 1770010800000,
+      "end_time_unix_ms": 1770012300000,
+      "quality_flags_json": [],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "strength_like",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.hr_only_no_distance.metric.heart_rate",
+      "activity_session_id": "synthetic.activity.hr_only_no_distance.session",
+      "metric_name": "heart_rate",
+      "value": 132.0,
+      "unit": "bpm",
+      "start_time_unix_ms": 1770014400000,
+      "end_time_unix_ms": 1770016200000,
+      "quality_flags_json": ["trusted_packet_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "hr_only_no_distance",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.hr_only_no_distance.metric.hrv_sdnn",
+      "activity_session_id": "synthetic.activity.hr_only_no_distance.session",
+      "metric_name": "hrv_sdnn",
+      "value": 42.0,
+      "unit": "ms",
+      "start_time_unix_ms": 1770014400000,
+      "end_time_unix_ms": 1770016200000,
+      "quality_flags_json": ["trusted_packet_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "hr_only_no_distance",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.hr_only_no_distance.metric.calories",
+      "activity_session_id": "synthetic.activity.hr_only_no_distance.session",
+      "metric_name": "calories",
+      "value": 210.0,
+      "unit": "kcal",
+      "start_time_unix_ms": 1770014400000,
+      "end_time_unix_ms": 1770016200000,
+      "quality_flags_json": [],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "hr_only_no_distance",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.no_hr.metric.distance",
+      "activity_session_id": "synthetic.activity.no_hr.session",
+      "metric_name": "distance",
+      "value": 3.7,
+      "unit": "km",
+      "start_time_unix_ms": 1770018000000,
+      "end_time_unix_ms": 1770020100000,
+      "quality_flags_json": ["motion_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "no_hr",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.no_hr.metric.speed",
+      "activity_session_id": "synthetic.activity.no_hr.session",
+      "metric_name": "speed",
+      "value": 5.8,
+      "unit": "km/h",
+      "start_time_unix_ms": 1770018000000,
+      "end_time_unix_ms": 1770020100000,
+      "quality_flags_json": ["motion_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "no_hr",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.no_hr.metric.steps",
+      "activity_session_id": "synthetic.activity.no_hr.session",
+      "metric_name": "steps",
+      "value": 4820.0,
+      "unit": "steps",
+      "start_time_unix_ms": 1770018000000,
+      "end_time_unix_ms": 1770020100000,
+      "quality_flags_json": ["motion_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "no_hr",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.no_hr.metric.calories",
+      "activity_session_id": "synthetic.activity.no_hr.session",
+      "metric_name": "calories",
+      "value": 180.0,
+      "unit": "kcal",
+      "start_time_unix_ms": 1770018000000,
+      "end_time_unix_ms": 1770020100000,
+      "quality_flags_json": [],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "no_hr",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.multi_interval.metric.heart_rate",
+      "activity_session_id": "synthetic.activity.multi_interval.session",
+      "metric_name": "heart_rate",
+      "value": 154.0,
+      "unit": "bpm",
+      "start_time_unix_ms": 1770021600000,
+      "end_time_unix_ms": 1770026100000,
+      "quality_flags_json": ["trusted_packet_derived"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "multi_interval",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.multi_interval.metric.load",
+      "activity_session_id": "synthetic.activity.multi_interval.session",
+      "metric_name": "load",
+      "value": 79.0,
+      "unit": "load",
+      "start_time_unix_ms": 1770021600000,
+      "end_time_unix_ms": 1770026100000,
+      "quality_flags_json": ["fixture_seed"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "multi_interval",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    },
+    {
+      "metric_id": "synthetic.activity.multi_interval.metric.calories",
+      "activity_session_id": "synthetic.activity.multi_interval.session",
+      "metric_name": "calories",
+      "value": 430.0,
+      "unit": "kcal",
+      "start_time_unix_ms": 1770021600000,
+      "end_time_unix_ms": 1770026100000,
+      "quality_flags_json": ["fixture_seed"],
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "multi_interval",
+        "row_kind": "metric",
+        "status": "pre_device"
+      }
+    }
+  ],
+  "activity_intervals": [
+    {
+      "interval_id": "synthetic.activity.run_like.interval.lap.1",
+      "activity_session_id": "synthetic.activity.run_like.session",
+      "interval_type": "lap",
+      "start_time_unix_ms": 1770004200000,
+      "end_time_unix_ms": 1770006600000,
+      "duration_ms": 2400000,
+      "sequence": 1,
+      "metadata_json": {
+        "segment": "steady_tempo"
+      },
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "run_like",
+        "row_kind": "interval",
+        "status": "pre_device"
+      }
+    },
+    {
+      "interval_id": "synthetic.activity.ride_like.interval.lap.1",
+      "activity_session_id": "synthetic.activity.ride_like.session",
+      "interval_type": "lap",
+      "start_time_unix_ms": 1770007800000,
+      "end_time_unix_ms": 1770009600000,
+      "duration_ms": 1800000,
+      "sequence": 1,
+      "metadata_json": {
+        "segment": "endurance_block_1"
+      },
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "ride_like",
+        "row_kind": "interval",
+        "status": "pre_device"
+      }
+    },
+    {
+      "interval_id": "synthetic.activity.ride_like.interval.split.2",
+      "activity_session_id": "synthetic.activity.ride_like.session",
+      "interval_type": "split",
+      "start_time_unix_ms": 1770009600000,
+      "end_time_unix_ms": 1770010500000,
+      "duration_ms": 900000,
+      "sequence": 2,
+      "metadata_json": {
+        "segment": "climb"
+      },
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "ride_like",
+        "row_kind": "interval",
+        "status": "pre_device"
+      }
+    },
+    {
+      "interval_id": "synthetic.activity.strength_like.interval.work.1",
+      "activity_session_id": "synthetic.activity.strength_like.session",
+      "interval_type": "work",
+      "start_time_unix_ms": 1770010800000,
+      "end_time_unix_ms": 1770011700000,
+      "duration_ms": 900000,
+      "sequence": 1,
+      "metadata_json": {
+        "set": "set_1"
+      },
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "strength_like",
+        "row_kind": "interval",
+        "status": "pre_device"
+      }
+    },
+    {
+      "interval_id": "synthetic.activity.strength_like.interval.rest.2",
+      "activity_session_id": "synthetic.activity.strength_like.session",
+      "interval_type": "rest",
+      "start_time_unix_ms": 1770011700000,
+      "end_time_unix_ms": 1770012300000,
+      "duration_ms": 600000,
+      "sequence": 2,
+      "metadata_json": {
+        "set": "set_1",
+        "phase": "recovery"
+      },
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "strength_like",
+        "row_kind": "interval",
+        "status": "pre_device"
+      }
+    },
+    {
+      "interval_id": "synthetic.activity.no_hr.interval.window.1",
+      "activity_session_id": "synthetic.activity.no_hr.session",
+      "interval_type": "window",
+      "start_time_unix_ms": 1770018300000,
+      "end_time_unix_ms": 1770020100000,
+      "duration_ms": 1800000,
+      "sequence": 1,
+      "metadata_json": {
+        "segment": "steady_walk"
+      },
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "no_hr",
+        "row_kind": "interval",
+        "status": "pre_device"
+      }
+    },
+    {
+      "interval_id": "synthetic.activity.multi_interval.interval.window.1",
+      "activity_session_id": "synthetic.activity.multi_interval.session",
+      "interval_type": "window",
+      "start_time_unix_ms": 1770021600000,
+      "end_time_unix_ms": 1770022200000,
+      "duration_ms": 600000,
+      "sequence": 1,
+      "metadata_json": {
+        "phase": "warmup"
+      },
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "multi_interval",
+        "row_kind": "interval",
+        "status": "pre_device"
+      }
+    },
+    {
+      "interval_id": "synthetic.activity.multi_interval.interval.work.2",
+      "activity_session_id": "synthetic.activity.multi_interval.session",
+      "interval_type": "work",
+      "start_time_unix_ms": 1770022200000,
+      "end_time_unix_ms": 1770023100000,
+      "duration_ms": 900000,
+      "sequence": 2,
+      "metadata_json": {
+        "phase": "interval_1"
+      },
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "multi_interval",
+        "row_kind": "interval",
+        "status": "pre_device"
+      }
+    },
+    {
+      "interval_id": "synthetic.activity.multi_interval.interval.rest.3",
+      "activity_session_id": "synthetic.activity.multi_interval.session",
+      "interval_type": "rest",
+      "start_time_unix_ms": 1770023100000,
+      "end_time_unix_ms": 1770023400000,
+      "duration_ms": 300000,
+      "sequence": 3,
+      "metadata_json": {
+        "phase": "recovery"
+      },
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "multi_interval",
+        "row_kind": "interval",
+        "status": "pre_device"
+      }
+    },
+    {
+      "interval_id": "synthetic.activity.multi_interval.interval.work.4",
+      "activity_session_id": "synthetic.activity.multi_interval.session",
+      "interval_type": "work",
+      "start_time_unix_ms": 1770023400000,
+      "end_time_unix_ms": 1770024600000,
+      "duration_ms": 1200000,
+      "sequence": 4,
+      "metadata_json": {
+        "phase": "interval_2"
+      },
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "multi_interval",
+        "row_kind": "interval",
+        "status": "pre_device"
+      }
+    },
+    {
+      "interval_id": "synthetic.activity.multi_interval.interval.window.5",
+      "activity_session_id": "synthetic.activity.multi_interval.session",
+      "interval_type": "window",
+      "start_time_unix_ms": 1770024600000,
+      "end_time_unix_ms": 1770026100000,
+      "duration_ms": 1500000,
+      "sequence": 5,
+      "metadata_json": {
+        "phase": "cooldown"
+      },
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "multi_interval",
+        "row_kind": "interval",
+        "status": "pre_device"
+      }
+    }
+  ],
+  "activity_labels": [
+    {
+      "label_id": "synthetic.activity.unknown.label",
+      "activity_session_id": "synthetic.activity.unknown.session",
+      "label_type": "candidate",
+      "value": "Unknown activity",
+      "source": "heuristic",
+      "confidence": 0.29,
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "unknown",
+        "row_kind": "label",
+        "status": "pre_device"
+      }
+    },
+    {
+      "label_id": "synthetic.activity.run_like.label",
+      "activity_session_id": "synthetic.activity.run_like.session",
+      "label_type": "user",
+      "value": "Tempo run",
+      "source": "user",
+      "confidence": 0.99,
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "run_like",
+        "row_kind": "label",
+        "status": "pre_device"
+      }
+    },
+    {
+      "label_id": "synthetic.activity.ride_like.label",
+      "activity_session_id": "synthetic.activity.ride_like.session",
+      "label_type": "official_app_comparison",
+      "value": "Endurance ride",
+      "source": "official_app",
+      "confidence": 0.94,
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "ride_like",
+        "row_kind": "label",
+        "status": "pre_device"
+      }
+    },
+    {
+      "label_id": "synthetic.activity.strength_like.label",
+      "activity_session_id": "synthetic.activity.strength_like.session",
+      "label_type": "candidate",
+      "value": "Dumbbell circuit",
+      "source": "heuristic",
+      "confidence": 0.82,
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "strength_like",
+        "row_kind": "label",
+        "status": "pre_device"
+      }
+    },
+    {
+      "label_id": "synthetic.activity.hr_only_no_distance.label",
+      "activity_session_id": "synthetic.activity.hr_only_no_distance.session",
+      "label_type": "user",
+      "value": "Heart-rate only session",
+      "source": "user",
+      "confidence": 0.68,
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "hr_only_no_distance",
+        "row_kind": "label",
+        "status": "pre_device"
+      }
+    },
+    {
+      "label_id": "synthetic.activity.no_hr.label",
+      "activity_session_id": "synthetic.activity.no_hr.session",
+      "label_type": "candidate",
+      "value": "Walk commute",
+      "source": "heuristic",
+      "confidence": 0.88,
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "no_hr",
+        "row_kind": "label",
+        "status": "pre_device"
+      }
+    },
+    {
+      "label_id": "synthetic.activity.multi_interval.label",
+      "activity_session_id": "synthetic.activity.multi_interval.session",
+      "label_type": "calibration",
+      "value": "Interval circuit",
+      "source": "fixture",
+      "confidence": 0.91,
+      "provenance_json": {
+        "source": "synthetic.activity.fixture",
+        "fixture_id": "synthetic.activity.sessions.pre_device.hand_derived",
+        "session_kind": "multi_interval",
+        "row_kind": "label",
+        "status": "pre_device"
+      }
+    }
+  ]
+}

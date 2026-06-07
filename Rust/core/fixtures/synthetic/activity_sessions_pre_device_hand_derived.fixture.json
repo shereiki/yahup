@@ -1,0 +1,29 @@
+{
+  "id": "synthetic.activity.sessions.pre_device.hand_derived",
+  "path": "synthetic/activity_sessions_pre_device_hand_derived.json",
+  "kind": "synthetic",
+  "source": "Hand-derived synthetic activity-session fixture covering unknown, run-like, ride-like, strength-like, HR-only/no-distance, no-HR, and multi-interval cases.",
+  "captured_at": "2026-05-27T00:00:00Z",
+  "device_model": "not_applicable",
+  "device_firmware": "not_applicable",
+  "app_version": "not_applicable",
+  "schema": "goose.activity-session-fixtures.v1",
+  "consent": "synthetic-no-user-data",
+  "sensitivity": "public-test-fixture",
+  "notes": "Seven synthetic activity sessions cover the generic pre-device corpus without WHOOP bytes. The file keeps provenance, sync status, metrics, intervals, and labels aligned with the activity storage tables.",
+  "expected": {
+    "session_count": 7,
+    "metric_count": 23,
+    "interval_count": 11,
+    "label_count": 7,
+    "session_kinds": [
+      "unknown",
+      "run_like",
+      "ride_like",
+      "strength_like",
+      "hr_only_no_distance",
+      "no_hr",
+      "multi_interval"
+    ]
+  }
+}

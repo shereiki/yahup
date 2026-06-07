@@ -1,0 +1,29 @@
+{
+  "id": "synthetic.openwhoop.uuid_detection",
+  "path": "synthetic/openwhoop_uuid_detection.json",
+  "kind": "synthetic",
+  "source": "Hand-derived OpenWhoop-inspired UUID probe fixture from Goose's current reference tables at OpenWhoop commit 55c5c1e2e02d3822c33e258838a57bb7d9e2ca53.",
+  "captured_at": "2026-05-29T00:00:00Z",
+  "device_model": "not_applicable",
+  "device_firmware": "not_applicable",
+  "app_version": "not_applicable",
+  "schema": "goose.openwhoop-reference-fixture.v1",
+  "consent": "synthetic-no-user-data",
+  "sensitivity": "public-test-fixture",
+  "notes": "Trims and case-folds each service UUID before generation lookup. The referenced OpenWhoop snapshot did not include a license file at the cited commit; use it as reverse-engineering prior art only.",
+  "expected": {
+    "probe_count": 2,
+    "probe_labels": [
+      "gen4_trimmed_uppercase",
+      "gen5_canonical"
+    ],
+    "detected_generations": [
+      "Gen4",
+      "Gen5"
+    ],
+    "canonical_service_uuids": [
+      "61080001-8d6d-82b8-614a-1c8cb0f8dcc6",
+      "fd4b0001-cce1-4033-93ce-002d5875f58a"
+    ]
+  }
+}

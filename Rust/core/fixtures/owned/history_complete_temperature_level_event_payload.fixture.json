@@ -1,0 +1,29 @@
+{
+  "id": "owned.history_complete.temperature_level_event_payload",
+  "path": "owned/history_complete_temperature_level_event_payload.hex",
+  "kind": "user-owned_payload_capture",
+  "source": "android_btsnoop_full_snoop_history_complete_20260528T1748Z",
+  "captured_at": "2026-05-28T17:28:54.429706Z",
+  "device_model": "WHOOP 5.0 Goose",
+  "device_firmware": "owned-capture",
+  "app_version": "whoop-official-capture",
+  "schema": "goose.payload.hex.v1",
+  "consent": "user-owned-capture",
+  "sensitivity": "user-owned-capture",
+  "notes": "Owned Android btsnoop-derived TEMPERATURE_LEVEL event payload from captures/android/bugreport-full-snoop-history-complete-20260528T1748Z/hci-analysis/contexts/event-temperature_level.jsonl line 13. Body units remain unresolved; this fixture only proves owned event capture/parsing.",
+  "expected": {
+    "device_type": "GOOSE",
+    "packet_type": 48,
+    "sequence": 0,
+    "command_or_event": 17,
+    "header_crc_valid": true,
+    "payload_crc_valid": true,
+    "packet_type_name": "EVENT",
+    "parsed_payload": {
+      "kind": "event",
+      "event_id": 17,
+      "event_name": "TEMPERATURE_LEVEL",
+      "data_offset": 12
+    }
+  }
+}

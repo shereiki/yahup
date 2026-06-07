@@ -1,0 +1,65 @@
+{
+  "schema": "goose.calibration-dataset.v1",
+  "records": [
+    {
+      "record_id": "synthetic.recovery.train.1",
+      "captured_at": "2026-05-01T00:00:00Z",
+      "session_id": "train-2026-05-01",
+      "metric_family": "recovery",
+      "algorithm_id": "goose.recovery.v0",
+      "algorithm_version": "0.1.0",
+      "prediction": 40.0,
+      "label": 43.0,
+      "label_source": "synthetic",
+      "label_provenance": {"source": "hand_derived", "formula": "label = 1.2 * prediction - 5"}
+    },
+    {
+      "record_id": "synthetic.recovery.train.2",
+      "captured_at": "2026-05-02T00:00:00Z",
+      "session_id": "train-2026-05-02",
+      "metric_family": "recovery",
+      "algorithm_id": "goose.recovery.v0",
+      "algorithm_version": "0.1.0",
+      "prediction": 50.0,
+      "label": 55.0,
+      "label_source": "synthetic",
+      "label_provenance": {"source": "hand_derived", "formula": "label = 1.2 * prediction - 5"}
+    },
+    {
+      "record_id": "synthetic.recovery.train.3",
+      "captured_at": "2026-05-03T00:00:00Z",
+      "session_id": "train-2026-05-03",
+      "metric_family": "recovery",
+      "algorithm_id": "goose.recovery.v0",
+      "algorithm_version": "0.1.0",
+      "prediction": 60.0,
+      "label": 67.0,
+      "label_source": "synthetic",
+      "label_provenance": {"source": "hand_derived", "formula": "label = 1.2 * prediction - 5"}
+    },
+    {
+      "record_id": "synthetic.recovery.holdout.1",
+      "captured_at": "2026-05-04T00:00:00Z",
+      "session_id": "holdout-2026-05-04",
+      "metric_family": "recovery",
+      "algorithm_id": "goose.recovery.v0",
+      "algorithm_version": "0.1.0",
+      "prediction": 70.0,
+      "label": 79.0,
+      "label_source": "synthetic",
+      "label_provenance": {"source": "hand_derived", "formula": "label = 1.2 * prediction - 5"}
+    },
+    {
+      "record_id": "synthetic.recovery.holdout.2",
+      "captured_at": "2026-05-05T00:00:00Z",
+      "session_id": "holdout-2026-05-05",
+      "metric_family": "recovery",
+      "algorithm_id": "goose.recovery.v0",
+      "algorithm_version": "0.1.0",
+      "prediction": 80.0,
+      "label": 91.0,
+      "label_source": "synthetic",
+      "label_provenance": {"source": "hand_derived", "formula": "label = 1.2 * prediction - 5"}
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "start_time": "2026-05-27T22:30:00Z",
+  "end_time": "2026-05-28T06:30:00Z",
+  "sleep_duration_minutes": 420.0,
+  "sleep_need_minutes": 480.0,
+  "time_in_bed_minutes": 480.0,
+  "midpoint_deviation_minutes": 30.0,
+  "disturbance_count": 4,
+  "input_ids": ["hand-derived.sleep"]
+}

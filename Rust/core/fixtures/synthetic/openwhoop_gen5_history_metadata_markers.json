@@ -1,0 +1,32 @@
+{
+  "schema": "goose.historical-sync-dry-run.v1",
+  "generation": "gen5",
+  "device_connected": true,
+  "safety_gate_ready": true,
+  "request_data_range": false,
+  "retry": {
+    "retry_after_idle": true,
+    "max_idle_retries": 1
+  },
+  "timeout": {
+    "idle_timeout_ms": 30000,
+    "transfer_timeout_ms": 120000,
+    "ack_timeout_ms": 10000
+  },
+  "cancel": {},
+  "resume": {},
+  "fake_events": [
+    {
+      "kind": "metadata",
+      "name": " History Start "
+    },
+    {
+      "kind": "metadata",
+      "name": "history-end"
+    },
+    {
+      "kind": "metadata",
+      "name": "HISTORY COMPLETE"
+    }
+  ]
+}

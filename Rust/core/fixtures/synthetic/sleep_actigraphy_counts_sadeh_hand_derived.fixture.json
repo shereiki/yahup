@@ -1,0 +1,23 @@
+{
+  "id": "synthetic.sleep.actigraphy_counts.sadeh_hand_derived",
+  "path": "synthetic/sleep_actigraphy_counts_sadeh_hand_derived.json",
+  "kind": "synthetic",
+  "source": "Hand-derived one-minute activity-count fixture for pyActigraphy Sadeh adapter contract tests.",
+  "captured_at": "2026-05-27T22:30:00Z",
+  "device_model": "not_applicable",
+  "device_firmware": "not_applicable",
+  "app_version": "not_applicable",
+  "schema": "goose.sleep-actigraphy-counts-input.v1",
+  "consent": "synthetic-no-user-data",
+  "sensitivity": "public-test-fixture",
+  "notes": "One-minute synthetic activity-count window with active edges and quiet middle epochs for Sadeh-style sleep/wake scoring.",
+  "expected": {
+    "provider": "external.pyactigraphy.sadeh",
+    "algorithm_id": "reference.sleep.pyactigraphy_sadeh.v1",
+    "epoch_minutes": 1.0,
+    "epoch_count": 15,
+    "sleep_epoch_count": 6,
+    "wake_epoch_count": 9,
+    "sleep_efficiency_fraction": 0.4
+  }
+}

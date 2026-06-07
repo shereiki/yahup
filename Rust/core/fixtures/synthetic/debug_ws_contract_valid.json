@@ -1,0 +1,119 @@
+{
+  "schema": "goose.debug-ws-contract.v1",
+  "bridge": {
+    "url": "ws://127.0.0.1:49152/goose-debug/stream?token=<redacted>",
+    "bind_host": "127.0.0.1",
+    "token_required": true,
+    "token_present": true,
+    "remote_bind_enabled": false,
+    "visible_remote_bind_toggle": false
+  },
+  "commands": [
+    {
+      "schema": "goose.debug.command.v1",
+      "command_id": "cmd-capture-start",
+      "command": "capture.start",
+      "args": {
+        "session_id": "debug-session-1"
+      },
+      "dry_run": false
+    },
+    {
+      "schema": "goose.debug.command.v1",
+      "command_id": "cmd-export-bundle",
+      "command": "export.bundle",
+      "args": {
+        "start": "2026-05-27T00:00:00Z",
+        "end": "2026-05-27T01:00:00Z",
+        "families": ["raw_evidence", "decoded_frames"]
+      },
+      "dry_run": true
+    }
+  ],
+  "events": [
+    {
+      "schema": "goose.debug.event.v1",
+      "session_id": "debug-session-1",
+      "time_unix_ms": 1779840000000,
+      "sequence": 1,
+      "source": "command",
+      "level": "info",
+      "topic": "command.started",
+      "message": "capture.start accepted",
+      "command_id": "cmd-capture-start",
+      "data": {
+        "dry_run": false
+      }
+    },
+    {
+      "schema": "goose.debug.event.v1",
+      "session_id": "debug-session-1",
+      "time_unix_ms": 1779840000050,
+      "sequence": 2,
+      "source": "app",
+      "level": "debug",
+      "topic": "capture.session.opened",
+      "message": "local capture session opened",
+      "data": {
+        "session_id": "debug-session-1"
+      }
+    },
+    {
+      "schema": "goose.debug.event.v1",
+      "session_id": "debug-session-1",
+      "time_unix_ms": 1779840000100,
+      "sequence": 3,
+      "source": "command",
+      "level": "info",
+      "topic": "command.result",
+      "message": "capture.start completed",
+      "command_id": "cmd-capture-start",
+      "data": {
+        "ok": true
+      }
+    },
+    {
+      "schema": "goose.debug.event.v1",
+      "session_id": "debug-session-1",
+      "time_unix_ms": 1779840000200,
+      "sequence": 4,
+      "source": "command",
+      "level": "info",
+      "topic": "command.started",
+      "message": "export.bundle accepted",
+      "command_id": "cmd-export-bundle",
+      "data": {
+        "dry_run": true
+      }
+    },
+    {
+      "schema": "goose.debug.event.v1",
+      "session_id": "debug-session-1",
+      "time_unix_ms": 1779840000250,
+      "sequence": 5,
+      "source": "sqlite",
+      "level": "debug",
+      "topic": "export.rows.counted",
+      "message": "export dry-run counted rows",
+      "data": {
+        "raw_evidence": 2,
+        "decoded_frames": 1
+      }
+    },
+    {
+      "schema": "goose.debug.event.v1",
+      "session_id": "debug-session-1",
+      "time_unix_ms": 1779840000300,
+      "sequence": 6,
+      "source": "command",
+      "level": "info",
+      "topic": "command.result",
+      "message": "export.bundle dry-run completed",
+      "command_id": "cmd-export-bundle",
+      "data": {
+        "ok": true,
+        "planned_files": ["manifest.json", "data/raw_evidence.jsonl"]
+      }
+    }
+  ]
+}

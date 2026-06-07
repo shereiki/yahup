@@ -1,0 +1,19 @@
+{
+  "id": "synthetic.goose.debug_ws.contract.valid",
+  "path": "synthetic/debug_ws_contract_valid.json",
+  "kind": "synthetic",
+  "source": "Hand-derived debug bridge stream contract fixture for local WebSocket validation.",
+  "captured_at": "2026-05-28T00:00:00Z",
+  "device_model": "not_applicable",
+  "device_firmware": "not_applicable",
+  "app_version": "not_applicable",
+  "schema": "goose.debug-ws-contract.v1",
+  "consent": "synthetic-no-user-data",
+  "sensitivity": "public-test-fixture",
+  "notes": "Validates loopback token-gated debug stream events with command.started and command.result correlation.",
+  "expected": {
+    "command_count": 2,
+    "event_count": 6,
+    "pass": true
+  }
+}

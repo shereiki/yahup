@@ -1,0 +1,36 @@
+{
+  "schema": "goose.sleep-ggir-summary-input.v1",
+  "ggir_version": "3.3-4",
+  "start_time": "2026-05-27T22:30:00Z",
+  "end_time": "2026-05-29T06:00:00Z",
+  "source_report": "synthetic GGIR part4/part5 sleep summary rows",
+  "input_ids": ["synthetic.hand_derived.sleep.ggir_summary"],
+  "rows": [
+    {
+      "ID": "synthetic-goose",
+      "night": 1,
+      "calendardate": "2026-05-27",
+      "sleeponset_ts": "22:30:00",
+      "wakeup_ts": "06:30:00",
+      "SptDuration": 8.0,
+      "SleepDurationInSpt": 7.0,
+      "WASO": 1.0,
+      "number_sib_sleepperiod": 2,
+      "cleaningcode": 0,
+      "acc_available": true
+    },
+    {
+      "ID": "synthetic-goose",
+      "night": 2,
+      "calendar_date": "2026-05-28",
+      "sleeponset_ts": "22:30:00",
+      "wakeup_ts": "06:00:00",
+      "dur_spt_min": 450.0,
+      "sleep_efficiency_after_onset": 80.0,
+      "WASO": 1.5,
+      "number_sib_sleepperiod": 1,
+      "cleaningcode": 0,
+      "acc_available": true
+    }
+  ]
+}

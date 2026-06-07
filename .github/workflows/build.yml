@@ -1,0 +1,51 @@
+name: Build Goose IPA
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Rust iOS targets
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+          source $HOME/.cargo/env
+          rustup target add aarch64-apple-ios
+      
+      - name: Build Rust core for iOS
+        run: |
+          source $HOME/.cargo/env
+          chmod +x Scripts/build_ios_rust.sh
+          PLATFORM_NAME=iphoneos CURRENT_ARCH=arm64 Scripts/build_ios_rust.sh
+      
+      - name: Build iOS app
+        run: |
+          xcodebuild \
+            -project GooseSwift.xcodeproj \
+            -scheme GooseSwift \
+            -configuration Debug \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath /tmp/goose-deriveddata \
+            -allowProvisioningUpdates \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+      
+      - name: Package IPA
+        run: |
+          mkdir -p Payload
+          cp -r /tmp/goose-deriveddata/Build/Products/Debug-iphoneos/GooseSwift.app Payload/
+          zip -r GooseSwift.ipa Payload
+      
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: GooseSwift.ipa
+          path: GooseSwift.ipa

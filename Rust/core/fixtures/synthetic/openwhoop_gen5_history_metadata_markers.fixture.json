@@ -1,0 +1,55 @@
+{
+  "id": "synthetic.openwhoop.gen5.history_metadata_markers",
+  "path": "synthetic/openwhoop_gen5_history_metadata_markers.json",
+  "kind": "synthetic",
+  "source": "Hand-derived Gen5 metadata-marker fixture from Goose's current historical-sync planner and the OpenWhoop Gen5 flow at commit 55c5c1e2e02d3822c33e258838a57bb7d9e2ca53.",
+  "captured_at": "2026-05-29T00:00:00Z",
+  "device_model": "not_applicable",
+  "device_firmware": "not_applicable",
+  "app_version": "not_applicable",
+  "schema": "goose.historical-sync-dry-run.v1",
+  "consent": "synthetic-no-user-data",
+  "sensitivity": "public-test-fixture",
+  "notes": "Exercises the marker normalizer so HistoryStart, HistoryEnd, and HistoryComplete are recovered from mixed-case metadata names. The referenced OpenWhoop snapshot did not include a license file at the cited commit; use it as reverse-engineering prior art only.",
+  "expected": {
+    "planned_command_count": 2,
+    "state": "complete",
+    "step_kinds": [
+      "connect",
+      "send_historical_data",
+      "consume_metadata",
+      "consume_metadata",
+      "historical_data_result",
+      "consume_metadata",
+      "complete"
+    ],
+    "state_trace": [
+      "idle",
+      "connected",
+      "transferring",
+      "transferring",
+      "ack_pending",
+      "ack_pending",
+      "ack_pending",
+      "complete"
+    ],
+    "command_numbers": [
+      22,
+      23
+    ],
+    "command_payload_expectations": [
+      "empty",
+      "history_end_ack_success"
+    ],
+    "marker_event_names": [
+      "HistoryStart",
+      "HistoryEnd",
+      "HistoryComplete"
+    ],
+    "marker_notes": [
+      "history_start",
+      "history_end",
+      "history_complete"
+    ]
+  }
+}
