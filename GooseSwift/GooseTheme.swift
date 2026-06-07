@@ -238,7 +238,9 @@ enum SleepAlgorithm {
         }
         var smoothed = rawStages
         for i in 1..<(smoothed.count-1) {
-            if smoothed[i]=="wake" && smoothed[i-1]!="wake" && smoothed[i+1]!="wake" { smoothed[i]="light" }
+            if smoothed[i] == "wake" && smoothed[i-1] != "wake" && smoothed[i+1] != "wake" {
+                smoothed[i] = "light"
+            }
         }
         var segs: [StageSegment] = [], curStage = smoothed[0], curStart = startMs
         for i in 1..<smoothed.count where smoothed[i] != curStage {
