@@ -49,8 +49,7 @@ final class YahupModel: ObservableObject {
         }
     }
     
-    func connect() { bleClient.scanAndConnect() }
-    func disconnect() { bleClient.disconnect() }
+    func connect() { bleClient.reconnectRemembered() }
     func startSync() { guard connectionState == "ready" else { return }; bleClient.beginHistoricalSync(trigger: "user", automatic: false) }
     
     func compute() async {
@@ -107,7 +106,7 @@ struct YahupDashboardView: View {
                             if model.connectionState == "ready" {
                                 Button("Sync", action: model.startSync).buttonStyle(.bordered).tint(.blue).disabled(model.isSyncing).font(.caption.weight(.semibold))
                             }
-                            Button(model.connectionState == "ready" ? "Disconnect" : "Connect", action: model.connectionState == "ready" ? model.disconnect : model.connect).buttonStyle(.borderedProminent).tint(model.connectionState == "ready" ? .red : .green).font(.caption.weight(.semibold))
+                            Button("Connect", action: model.connect).buttonStyle(.borderedProminent).tint(.green).font(.caption.weight(.semibold)).disabled(model.connectionState == "ready")
                         }
                     }
                     
